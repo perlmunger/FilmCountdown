@@ -7,7 +7,8 @@ I wanted some sort of countdown mechanism for a project I was working on, so I c
 
 Here is how you use the code. To add it to a view controller,
 
-```- (void)viewDidLoad
+```
+- (void)viewDidLoad
 {
   [super viewDidLoad];
 
@@ -16,11 +17,13 @@ Here is how you use the code. To add it to a view controller,
   
   [[[self view] layer] addSublayer:_filmCountdownLayer];
 
-}```
+}
+```
 
 Then, create some action and trigger the animation and provide it a completion block.
 
-```- (IBAction)didTapRunAnimationButton:(id)sender
+```
+- (IBAction)didTapRunAnimationButton:(id)sender
 {
   [_filmCountdownLayer setOpacity:1.0f];
   [_filmCountdownLayer setCount:5];
@@ -30,7 +33,8 @@ Then, create some action and trigger the animation and provide it a completion b
     [_filmCountdownLayer setOpacity:0.0f];
     [CATransaction commit];
   }];
-}```
+}
+```
 
 This code fades the whole countdown layer to a zero opacity when the animation has completed.
 
