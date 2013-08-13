@@ -3,7 +3,7 @@ Film Countdown Core Animation Layer
 
 I wanted some sort of countdown mechanism for a project I was working on, so I created this Core Animation layer. Here is a screenshot of what it produces:
 
-![Countdown Image](countdown.png)
+![Countdown Image](http://i.imgur.com/OrFzSfQ.gif)
 
 Here is how you use the code. To add it to a view controller,
 
